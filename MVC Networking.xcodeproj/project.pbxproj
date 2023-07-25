@@ -13,6 +13,7 @@
 		ABD67DC62A6F331F00E3EDEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD67DC42A6F331F00E3EDEC /* Main.storyboard */; };
 		ABD67DC82A6F332000E3EDEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABD67DC72A6F332000E3EDEC /* Assets.xcassets */; };
 		ABD67DCB2A6F332000E3EDEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD67DC92A6F332000E3EDEC /* LaunchScreen.storyboard */; };
+		ABF26B8D2A6F5A2400FAC84D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF26B8C2A6F5A2400FAC84D /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		ABD67DC72A6F332000E3EDEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABD67DCA2A6F332000E3EDEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABD67DCC2A6F332000E3EDEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABF26B8C2A6F5A2400FAC84D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				ABD67DC72A6F332000E3EDEC /* Assets.xcassets */,
 				ABD67DC92A6F332000E3EDEC /* LaunchScreen.storyboard */,
 				ABD67DCC2A6F332000E3EDEC /* Info.plist */,
+				ABF26B8C2A6F5A2400FAC84D /* HomeViewController.swift */,
 			);
 			path = "MVC Networking";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				ABD67DC32A6F331F00E3EDEC /* SplashViewController.swift in Sources */,
 				ABD67DBF2A6F331F00E3EDEC /* AppDelegate.swift in Sources */,
 				ABD67DC12A6F331F00E3EDEC /* SceneDelegate.swift in Sources */,
+				ABF26B8D2A6F5A2400FAC84D /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

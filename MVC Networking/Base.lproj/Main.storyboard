@@ -31,10 +31,41 @@
                             <constraint firstItem="35G-zo-MFK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jq5-IB-dKy"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="nZm-gd-86L" kind="show" identifier="SplashToHome" id="O5e-eO-Lea"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="-34"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="LcT-Oh-qAj">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="nZm-gd-86L" customClass="HomeViewController" customModule="MVC_Networking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vtf-Pi-a6E">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7At-b6-PUK">
+                                <rect key="frame" x="140.33333333333334" y="411.66666666666669" width="112.66666666666666" height="28.666666666666686"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZMI-uw-STF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7At-b6-PUK" firstAttribute="centerY" secondItem="vtf-Pi-a6E" secondAttribute="centerY" id="FDg-fh-P9Y"/>
+                            <constraint firstItem="7At-b6-PUK" firstAttribute="centerX" secondItem="vtf-Pi-a6E" secondAttribute="centerX" id="sbG-Qh-0RY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1xC-Zx-FpC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RS7-9j-UUa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952" y="-35"/>
         </scene>
     </scenes>
     <resources>
