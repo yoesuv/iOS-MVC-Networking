@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB1087B52A6F84B200D2FCAF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1087B42A6F84B200D2FCAF /* NetworkService.swift */; };
 		ABD67DBF2A6F331F00E3EDEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD67DBE2A6F331F00E3EDEC /* AppDelegate.swift */; };
 		ABD67DC12A6F331F00E3EDEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD67DC02A6F331F00E3EDEC /* SceneDelegate.swift */; };
 		ABD67DC32A6F331F00E3EDEC /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD67DC22A6F331F00E3EDEC /* SplashViewController.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		9572CDCE38C3F354624B6FA3 /* Pods-MVC Networking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVC Networking.debug.xcconfig"; path = "Target Support Files/Pods-MVC Networking/Pods-MVC Networking.debug.xcconfig"; sourceTree = "<group>"; };
 		9B740BE46F8C43B6A0B28E27 /* Pods_MVC_Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVC_Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB1087B42A6F84B200D2FCAF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		ABD67DBB2A6F331F00E3EDEC /* MVC Networking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVC Networking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD67DBE2A6F331F00E3EDEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABD67DC02A6F331F00E3EDEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,8 +64,15 @@
 				9572CDCE38C3F354624B6FA3 /* Pods-MVC Networking.debug.xcconfig */,
 				EEEF925C4EB3C5255E72DB2D /* Pods-MVC Networking.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		AB1087B32A6F849A00D2FCAF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AB1087B42A6F84B200D2FCAF /* NetworkService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		ABD67DB22A6F331F00E3EDEC = {
@@ -87,6 +96,7 @@
 		ABD67DBD2A6F331F00E3EDEC /* MVC Networking */ = {
 			isa = PBXGroup;
 			children = (
+				AB1087B32A6F849A00D2FCAF /* Services */,
 				ABF26B902A6F7A9800FAC84D /* Models */,
 				ABF26B8E2A6F6BDA00FAC84D /* UINavigationBarExtensions.swift */,
 				ABD67DBE2A6F331F00E3EDEC /* AppDelegate.swift */,
@@ -230,6 +240,7 @@
 				ABD67DBF2A6F331F00E3EDEC /* AppDelegate.swift in Sources */,
 				ABD67DC12A6F331F00E3EDEC /* SceneDelegate.swift in Sources */,
 				ABF26B8D2A6F5A2400FAC84D /* HomeViewController.swift in Sources */,
+				AB1087B52A6F84B200D2FCAF /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
