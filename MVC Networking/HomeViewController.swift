@@ -8,7 +8,9 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    
+    private let service = NetworkService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -16,6 +18,19 @@ class HomeViewController: UIViewController {
         self.navigationItem.hidesBackButton = true
         
         self.navigationController?.navigationBar.setColors(background: UIColor(named: "BlueGrey")!, text: UIColor.white)
+        
+        requestListPlace()
     }
-
+    
+    private func requestListPlace() {
+        service.fetchPlaces(result: { response in
+            if (response.error == nil) {
+                print("HomeViewController # success \(response.value?.count ?? 0)")
+            } else {
+                let err = response.error?.localizedDescription ?? ""
+                print("HomeViewController # error \(err)")
+            }
+        })
+    }
+    
 }

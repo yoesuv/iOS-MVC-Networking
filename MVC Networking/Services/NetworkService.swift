@@ -10,11 +10,11 @@ import Alamofire
 
 class NetworkService {
     
-    func fetchPlaces( result: @escaping (DataResponse<[PlaceModel], AFError>) -> Void) {
+    func fetchPlaces(result: @escaping (DataResponse<[PlaceModel], AFError>) -> Void) {
         let url = "https://info-malang-batu.firebaseapp.com/List_place_malang_batu.json"
         AF.request(url, method: .get).responseDecodable(of: [PlaceModel].self) { response in
             result(response)
         }
     }
-        
+    
 }
