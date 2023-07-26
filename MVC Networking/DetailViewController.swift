@@ -6,10 +6,15 @@
 //
 
 import UIKit
+import Kingfisher
 
 class DetailViewController: UIViewController {
     
     var place: PlaceModel?
+    
+    @IBOutlet weak var imageViewDetail: UIImageView!
+    @IBOutlet weak var labelDetailName: UILabel!
+    @IBOutlet weak var labelDetailDescription: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +23,10 @@ class DetailViewController: UIViewController {
         self.navigationController?.navigationBar.topItem?.backBarButtonItem = button
         self.navigationController?.navigationBar.setColors(background: UIColor(named: "BlueGrey")!, text: UIColor.white)
         
-        print("DetailViewController # \(place)")
+        labelDetailName.text = place?.nama
+        labelDetailDescription.text = place?.deskripsi
+        let imageUrl = URL(string: place?.gambar ?? "")
+        imageViewDetail.kf.setImage(with: imageUrl)
     }
     
 }

@@ -80,10 +80,47 @@
                     <view key="view" contentMode="scaleToFill" id="zB2-jw-pe7">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tf9-68-q9l">
+                                <rect key="frame" x="0.0" y="103" width="393" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="5I3-j3-k6i"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfr-Sc-6L5" userLabel="LabelDetailName">
+                                <rect key="frame" x="10" y="333" width="373" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0PU-JL-koo" userLabel="LabelDetailDescription">
+                                <rect key="frame" x="10" y="365" width="373" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="oAm-tX-Kva"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oAm-tX-Kva" firstAttribute="trailing" secondItem="tf9-68-q9l" secondAttribute="trailing" id="1KS-OU-JQk"/>
+                            <constraint firstItem="tf9-68-q9l" firstAttribute="top" secondItem="oAm-tX-Kva" secondAttribute="top" id="5n6-Og-47R"/>
+                            <constraint firstItem="0PU-JL-koo" firstAttribute="leading" secondItem="oAm-tX-Kva" secondAttribute="leading" constant="10" id="JBk-lU-eiV"/>
+                            <constraint firstItem="tf9-68-q9l" firstAttribute="leading" secondItem="oAm-tX-Kva" secondAttribute="leading" id="TAl-tX-0eJ"/>
+                            <constraint firstItem="oAm-tX-Kva" firstAttribute="trailing" secondItem="0PU-JL-koo" secondAttribute="trailing" constant="10" id="Xve-8z-gP0"/>
+                            <constraint firstItem="rfr-Sc-6L5" firstAttribute="leading" secondItem="oAm-tX-Kva" secondAttribute="leading" constant="10" id="aPl-AY-T6A"/>
+                            <constraint firstItem="0PU-JL-koo" firstAttribute="top" secondItem="rfr-Sc-6L5" secondAttribute="bottom" constant="5" id="c4V-Gf-gJD"/>
+                            <constraint firstItem="tf9-68-q9l" firstAttribute="leading" secondItem="oAm-tX-Kva" secondAttribute="leading" id="cWq-2m-4Y0"/>
+                            <constraint firstItem="oAm-tX-Kva" firstAttribute="trailing" secondItem="rfr-Sc-6L5" secondAttribute="trailing" constant="10" id="gLJ-Gb-NzA"/>
+                            <constraint firstItem="rfr-Sc-6L5" firstAttribute="top" secondItem="tf9-68-q9l" secondAttribute="bottom" constant="10" id="n59-UJ-ovE"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gpI-F9-Ur9"/>
+                    <connections>
+                        <outlet property="imageViewDetail" destination="tf9-68-q9l" id="O0y-bm-9gJ"/>
+                        <outlet property="labelDetailDescription" destination="0PU-JL-koo" id="zH1-2q-1bj"/>
+                        <outlet property="labelDetailName" destination="rfr-Sc-6L5" id="scZ-iZ-8pB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qbe-RU-gck" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
