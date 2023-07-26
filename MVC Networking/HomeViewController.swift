@@ -12,6 +12,8 @@ class HomeViewController: UIViewController {
     
     private let service = NetworkService()
     
+    private var listPlace: [PlaceModel] = []
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -37,9 +39,13 @@ class HomeViewController: UIViewController {
     }
     
     private func requestListPlace() {
+        self.listPlace.removeAll()
         service.fetchPlaces(result: { response in
             if (response.error == nil) {
-                print("HomeViewController # success \(response.value?.count ?? 0)")
+                self.listPlace = response.value ?? []
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
             } else {
                 let err = response.error?.localizedDescription ?? ""
                 print("HomeViewController # error \(err)")
@@ -58,16 +64,17 @@ extension HomeViewController: UITableViewDelegate {
 extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return listPlace.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "CellPlace", for: indexPath) as? PlaceCell else {
             return UITableViewCell()
         }
-        cell.labelName.text = "Index \(indexPath.row)"
-        cell.labelLocation.text = "Kota Malang"
-        let imgUrl = URL(string: "https://lh3.googleusercontent.com/-7To0y-nnYak/VqQYjBWAwoI/AAAAAAAACf8/r_sAJ-dgsL8/s250-Ic42/thumbnail_alun_alun_malang.jpg")
+        let data = listPlace[indexPath.row]
+        cell.labelName.text = data.nama
+        cell.labelLocation.text = data.lokasi
+        let imgUrl = URL(string: data.gambar)
         cell.imageViewPlace.kf.setImage(with: imgUrl)
         return cell
     }
