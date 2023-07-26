@@ -21,7 +21,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="64" id="ilb-wc-RXD"/>
-                            <constraint firstAttribute="height" constant="64" id="nkx-zr-ccg"/>
                         </constraints>
                     </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="yI1-bI-h9e">
