@@ -24,16 +24,16 @@
                         </constraints>
                     </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="yI1-bI-h9e">
-                        <rect key="frame" x="74" y="0.0" width="329" height="64"/>
+                        <rect key="frame" x="74" y="5" width="329" height="54"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8a-rw-pux" userLabel="LabelTitle">
-                                <rect key="frame" x="0.0" y="0.0" width="329" height="32"/>
+                                <rect key="frame" x="0.0" y="0.0" width="329" height="27"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLj-Ao-1I4" userLabel="LabelLocation">
-                                <rect key="frame" x="0.0" y="32" width="329" height="32"/>
+                                <rect key="frame" x="0.0" y="27" width="329" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -44,9 +44,9 @@
                 <constraints>
                     <constraint firstItem="yI1-bI-h9e" firstAttribute="leading" secondItem="NMk-Sm-oRP" secondAttribute="trailing" constant="10" id="BMv-4j-2DA"/>
                     <constraint firstItem="NMk-Sm-oRP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="MlJ-re-x4K"/>
-                    <constraint firstItem="yI1-bI-h9e" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="PzD-3L-eGb"/>
+                    <constraint firstItem="yI1-bI-h9e" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="PzD-3L-eGb"/>
                     <constraint firstItem="NMk-Sm-oRP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="SCg-l7-QbC"/>
-                    <constraint firstAttribute="bottom" secondItem="yI1-bI-h9e" secondAttribute="bottom" id="aOW-ly-9do"/>
+                    <constraint firstAttribute="bottom" secondItem="yI1-bI-h9e" secondAttribute="bottom" constant="5" id="aOW-ly-9do"/>
                     <constraint firstAttribute="bottom" secondItem="NMk-Sm-oRP" secondAttribute="bottom" id="efR-gG-sR5"/>
                     <constraint firstItem="yI1-bI-h9e" firstAttribute="centerY" secondItem="NMk-Sm-oRP" secondAttribute="centerY" id="fQi-o4-hcO"/>
                     <constraint firstAttribute="trailing" secondItem="yI1-bI-h9e" secondAttribute="trailing" id="xk7-HJ-BJd"/>
