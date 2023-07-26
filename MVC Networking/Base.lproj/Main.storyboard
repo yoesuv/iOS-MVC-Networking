@@ -66,11 +66,28 @@
                     <navigationItem key="navigationItem" id="1xC-Zx-FpC"/>
                     <connections>
                         <outlet property="tableView" destination="emi-Cw-37V" id="Xlc-HF-QqS"/>
+                        <segue destination="X2k-J6-yEu" kind="show" identifier="HomeToDetail" id="LIX-Nu-eZW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RS7-9j-UUa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1878.6259541984732" y="-35.211267605633807"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="SOK-QF-kwj">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="X2k-J6-yEu" customClass="DetailViewController" customModule="MVC_Networking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zB2-jw-pe7">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="oAm-tX-Kva"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gpI-F9-Ur9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qbe-RU-gck" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2750" y="-35"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="msG-9m-Sbs">
@@ -80,6 +97,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QzV-Fm-W0s">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

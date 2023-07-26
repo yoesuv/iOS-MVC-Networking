@@ -10,6 +10,7 @@
 		AB1087B52A6F84B200D2FCAF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1087B42A6F84B200D2FCAF /* NetworkService.swift */; };
 		AB390CCA2A6FB2540060003F /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB390CC82A6FB2540060003F /* PlaceCell.swift */; };
 		AB390CCB2A6FB2540060003F /* PlaceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB390CC92A6FB2540060003F /* PlaceCell.xib */; };
+		AB5B39742A70D74200C15BAF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5B39732A70D74200C15BAF /* DetailViewController.swift */; };
 		ABD67DBF2A6F331F00E3EDEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD67DBE2A6F331F00E3EDEC /* AppDelegate.swift */; };
 		ABD67DC12A6F331F00E3EDEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD67DC02A6F331F00E3EDEC /* SceneDelegate.swift */; };
 		ABD67DC32A6F331F00E3EDEC /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD67DC22A6F331F00E3EDEC /* SplashViewController.swift */; };
@@ -28,6 +29,7 @@
 		AB1087B42A6F84B200D2FCAF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		AB390CC82A6FB2540060003F /* PlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
 		AB390CC92A6FB2540060003F /* PlaceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceCell.xib; sourceTree = "<group>"; };
+		AB5B39732A70D74200C15BAF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		ABD67DBB2A6F331F00E3EDEC /* MVC Networking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVC Networking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD67DBE2A6F331F00E3EDEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABD67DC02A6F331F00E3EDEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				ABF26B8C2A6F5A2400FAC84D /* HomeViewController.swift */,
 				AB390CC82A6FB2540060003F /* PlaceCell.swift */,
 				AB390CC92A6FB2540060003F /* PlaceCell.xib */,
+				AB5B39732A70D74200C15BAF /* DetailViewController.swift */,
 			);
 			path = "MVC Networking";
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB5B39742A70D74200C15BAF /* DetailViewController.swift in Sources */,
 				ABD67DC32A6F331F00E3EDEC /* SplashViewController.swift in Sources */,
 				ABF26B922A6F7B9200FAC84D /* PlaceModel.swift in Sources */,
 				ABF26B8F2A6F6BDA00FAC84D /* UINavigationBarExtensions.swift in Sources */,

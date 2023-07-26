@@ -33,6 +33,7 @@ class HomeViewController: UIViewController {
         tableView.directionalLayoutMargins = .zero
         
         tableView.dataSource = self
+        tableView.delegate = self
     }
     
     private func requestListPlace() {
@@ -46,6 +47,12 @@ class HomeViewController: UIViewController {
         })
     }
     
+}
+
+extension HomeViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "HomeToDetail", sender: self)
+    }
 }
 
 extension HomeViewController: UITableViewDataSource {
