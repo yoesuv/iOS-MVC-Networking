@@ -11,6 +11,7 @@ class PlaceCell: UITableViewCell {
 
     @IBOutlet weak var labelName: UILabel!
     @IBOutlet weak var labelLocation: UILabel!
+    @IBOutlet weak var imageViewPlace: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomeViewController: UIViewController {
     
@@ -59,6 +60,8 @@ extension HomeViewController: UITableViewDataSource {
         }
         cell.labelName.text = "Index \(indexPath.row)"
         cell.labelLocation.text = "Kota Malang"
+        let imgUrl = URL(string: "https://lh3.googleusercontent.com/-7To0y-nnYak/VqQYjBWAwoI/AAAAAAAACf8/r_sAJ-dgsL8/s250-Ic42/thumbnail_alun_alun_malang.jpg")
+        cell.imageViewPlace.kf.setImage(with: imgUrl)
         return cell
     }
 }
