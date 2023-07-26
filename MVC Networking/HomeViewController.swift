@@ -13,8 +13,17 @@ class HomeViewController: UIViewController {
     private let service = NetworkService()
     
     private var listPlace: [PlaceModel] = []
+    private var place: PlaceModel?
     
     @IBOutlet weak var tableView: UITableView!
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "HomeToDetail") {
+            if let detailViewController = segue.destination as? DetailViewController {
+                detailViewController.place = place
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +66,7 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.place = listPlace[indexPath.row]
         self.performSegue(withIdentifier: "HomeToDetail", sender: self)
     }
 }
