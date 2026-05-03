@@ -439,7 +439,7 @@
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
 				kind = exactVersion;
-				version = 5.7.1;
+				version = 5.11.2;
 			};
 		};
 		ABFA4C9A2FA733B10011C805 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
