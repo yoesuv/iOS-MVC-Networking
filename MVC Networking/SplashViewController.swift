@@ -11,10 +11,10 @@ class SplashViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        Task { @MainActor in
+            try? await Task.sleep(for: .seconds(2))
             self.performSegue(withIdentifier: "SplashToHome", sender: self)
         }
     }
 
 }
-

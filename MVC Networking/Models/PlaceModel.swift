@@ -6,7 +6,7 @@
 //
 import Foundation
 
-struct PlaceModel: Codable, Identifiable {
+struct PlaceModel: Codable, Identifiable, Sendable {
     var id: String {
         return nama
     }

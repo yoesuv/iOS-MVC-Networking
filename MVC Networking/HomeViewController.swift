@@ -50,18 +50,16 @@ class HomeViewController: UIViewController {
     private func requestListPlace() {
         LoadingOverlay.shared.showOverlay(view: self.navigationController?.view, text: "Loading List Place")
         self.listPlace.removeAll()
-        service.fetchPlaces(result: { response in
+        service.fetchPlaces { @MainActor response in
             LoadingOverlay.shared.hideOverlayView()
-            if (response.error == nil) {
+            if response.error == nil {
                 self.listPlace = response.value ?? []
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
+                self.tableView.reloadData()
             } else {
                 let err = response.error?.localizedDescription ?? ""
                 print("HomeViewController # error \(err)")
             }
-        })
+        }
     }
     
 }
