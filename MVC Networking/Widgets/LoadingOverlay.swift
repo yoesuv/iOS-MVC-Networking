@@ -9,20 +9,19 @@ import Foundation
 import UIKit
 
 
-public class LoadingOverlay{
+@MainActor
+public final class LoadingOverlay {
     
     var overlayView = UIView()
     var activityIndicator = UIActivityIndicatorView()
     private var textLabel = UILabel()
     
-    class var shared: LoadingOverlay {
-        struct Static {
-            static let instance: LoadingOverlay = LoadingOverlay()
-        }
-        return Static.instance
-    }
+    static let shared = LoadingOverlay()
     
-    public func showOverlay(view: UIView!, text: String) {
+    private init() {}
+    
+    public func showOverlay(view: UIView?, text: String) {
+        guard let view else { return }
         
         overlayView = UIView(frame: CGRect(x: view.frame.midX-65, y: view.frame.midY-65, width: 130, height: 130))
         overlayView.layer.cornerRadius = 26
